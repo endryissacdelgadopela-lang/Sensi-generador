@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sensi Generator</title>
+</head>
+<body>
+<h1>Sensi Generator Free Fire</h1>
+
+<select id="movil">
+<option>Redmi 10C</option>
+<option>Samsung A15</option>
+</select>
+
+<button onclick="generar()">Generar</button>
+
+<p id="resultado"></p>
+
+<script>
+function generar() {
+ let movil = document.getElementById("movil").value;
+
+ if(movil == "Redmi 10C"){
+   document.getElementById("resultado").innerHTML =
+   "General: 200<br>Punto Rojo: 195<br>2x: 185<br>4x: 175";
+ }
+
+ if(movil == "Samsung A15"){
+   document.getElementById("resultado").innerHTML =
+   "General: 190<br>Punto Rojo: 185<br>2x: 175<br>4x: 165";
+ }
+}
+</script>
+
+</body>
+</html>
